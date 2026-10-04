@@ -42,7 +42,6 @@ export function priceLabel(product, amount) {
  * @returns {boolean}
  */
 export function isExpensive(amount) {
-  // TODO: return the comparison itself. You do not need an if statement.
   return amount > 100;
 }
 
@@ -56,7 +55,6 @@ export function isExpensive(amount) {
  * @returns {number} the shipping cost in EGP
  */
 export function shippingCost(orderTotal) {
-  // TODO: use an if. Remember that return stops the function.
   if (orderTotal > 500) {
     return 0;
   } else {
@@ -74,7 +72,6 @@ export function shippingCost(orderTotal) {
  * @returns {string}
  */
 export function stockLabel(count) {
-  // TODO: use if / else if / else. The order of the branches matters.
    if (count === 0) {
     return "Out of stock";
   } else if (count < 10) {
