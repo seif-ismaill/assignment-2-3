@@ -14,29 +14,49 @@
  * Keep the page open in the browser and refresh after each change.
  */
 
-/* TODO: a rule for `body` that sets
- *       font-family, color, and background-color. */
 
-/* TODO: a rule for `.page` that sets
- *       max-width, and margin (use `0 auto` to centre it). */
+body {
+  font-family: Arial, sans-serif;
+  color: #000000;
+  background-color: #bfb331;
+}
 
-/* TODO: a rule for `header` that sets
- *       display: flex;
- *       justify-content: space-between;
- *       align-items: center;
- *       and one more property of your choosing. */
+.page {
+  max-width: 1000px;
+  margin: 0 auto;
+}
 
-/* TODO: a rule for `nav a` — a descendant selector, so it only affects links
- *       inside the nav — that sets
- *       color, and text-decoration. */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f90202;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+}
 
-/* TODO: a rule for `.card-list` that sets
- *       display: flex;
- *       gap (any size);
- *       flex-wrap: wrap; */
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+}
 
-/* TODO: a rule for `.card` that sets
- *       padding, border-radius, and background-color. */
+.card-list {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
 
-/* TODO: a rule for `.price` that sets
- *       color, and font-weight. */
+.card {
+  padding: 20px;
+  border-radius: 10px;
+  background-color: white;
+  flex: 1;
+  min-width: 180px;
+}
+
+.price {
+  color: #ec0606;
+  font-weight: bold;
+}
